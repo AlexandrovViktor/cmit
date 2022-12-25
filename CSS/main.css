@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+/* Стиль для всего сайта */
+
+body {
+  background-color: rgb(50, 62, 97);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(145, 102, 66);
+
+  --webkit-font-smoothing: antialiased;
+  --webkit-overflow-scroling: touch;
+
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+/* Настройка всего текста */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(90, 181, 255, 0.74);
+}
+h3 {
+  font-size: 20px;
+}
+h6 {
+  color: azure;
+  font-size: 18px;
+}
+p {
+  line-height: 20px;
+  color: rgb(145, 102, 66);
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+a:hover,
+a:focus {
+  color: rgb(199, 199, 199);
+  text-decoration: none;
+  outline: 0;
+}
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0px;
+  border-top: 3px solid rgb(0, 0, 0);
+  padding: 0;
+  margin: 1em 0;
+}
+
+/* Шапка */
+
+.navbar {
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-inverse {
+  background-color: rgb(63, 63, 63);
+}
+
+.cnopka:hover .a {
+  display: none;
+}
+.cnopka .b {
+  display: none;
+}
+.cnopka:hover .b {
+  display: inline;
+}
+
+/* О нас */
+
+#headerwrap {
+  background-color: rgb(36, 44, 70);
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 80%;
+  margin-left: 10%;
+
+  background-size: 100%;
+
+  --webkit-background-size: cover;
+  --moz-webkit-background-size: cover;
+  --o-background-size: cover;
+  background-size: cover;
+}
+
+#headerwrap h1 {
+  margin-top: 100px;
+  font-size: 70px;
+  font-weight: 200;
+  color: azure;
+  letter-spacing: 2px;
+}
+
+#headerwrap h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Возможности */
+
+.w h4 {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Картинки */
+
+#dg {
+  margin-top: -20px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.tilt {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.tilt:hover {
+  -webkit-transform: rotate3d(1, 2, 3, 10deg);
+  -moz-transform: rotate3d(1, 2, 3, 10deg);
+  -o-transform: rotate3d(1, 2, 3, 10deg);
+  -ms-transform: rotate3d(1, 2, 3, 10deg);
+  transform: rotate3d(1, 2, 3, 10deg);
+}
+
+.tilt img {
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  max-width: 500px;
+}
+
+@media (max-width: 1463px) {
+  #dg {
+    display: none;
+  }
+}
+
+@media (min-width: 1464px) {
+  .tilt img {
+    max-width: 100%;
+  }
+}
+
+/* Блок связи */
+
+.wb {
+  border-top: 1px solid rgb(0, 0, 0);
+  margin-top: 25px;
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+}
+
+.wbr img {
+  margin-bottom: 20px;
+  margin-left: 25px;
+  padding: 5px;
+  border: 2px solid silver;
+  max-width: 100px;
+}
+
+.wbr {
+  float: center;
+}
+
+.wbr img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wbr img:hover {
+  -webkit-transform: rotate3d(1, 2, 3, 10deg);
+  -moz-transform: rotate3d(1, 2, 3, 10deg);
+  -o-transform: rotate3d(1, 2, 3, 10deg);
+  -ms-transform: rotate3d(1, 2, 3, 10deg);
+  transform: rotate3d(1, 2, 3, 10deg);
+}
+
+.wb h4 {
+  color: azure;
+  font-size: 30px;
+  font-weight: 700;
+}
